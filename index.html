@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JT | Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="utility-bar" aria-label="Page controls">
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="切换参考风格" aria-pressed="false">
+        <span aria-hidden="true">✦</span>
+      </button>
+    </div>
+
+    <main class="container" aria-label="Personal link homepage">
+      <section class="profile" aria-label="Profile">
+        <div class="avatar-ring">
+          <img class="avatar" src="头像1.png" alt="Your Name avatar">
+        </div>
+        <span class="eyebrow">你好，我是</span>
+        <h1>JT</h1>
+        <p class="headline">用 AI 和代码，构建有趣的东西。</p>
+        <p class="bio">AI 编程爱好者，关注独立开发、自动化工具与个人效率系统。</p>
+      </section>
+
+      <nav class="links" aria-label="Profile links">
+        <a class="link-card" href="https://github.com/BonusWang" target="_blank" rel="noopener noreferrer" style="--i: 0">
+          <i class="link-icon fa-brands fa-github" aria-hidden="true"></i>
+          <span class="link-text">GitHub</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link-card" href="https://twitter.com/yourname" target="_blank" rel="noopener noreferrer" style="--i: 1">
+          <i class="link-icon fa-brands fa-x-twitter" aria-hidden="true"></i>
+          <span class="link-text">Twitter</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link-card" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" style="--i: 2">
+          <i class="link-icon fa-brands fa-youtube" aria-hidden="true"></i>
+          <span class="link-text">YouTube</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link-card" href="https://space.bilibili.com/65368748" target="_blank" rel="noopener noreferrer" style="--i: 3">
+          <i class="link-icon fa-brands fa-bilibili" aria-hidden="true"></i>
+          <span class="link-text">Bilibili</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link-card" href="mailto:hello@example.com" target="_blank" rel="noopener noreferrer" style="--i: 4">
+          <i class="link-icon fa-solid fa-envelope" aria-hidden="true"></i>
+          <span class="link-text">Email</span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+        <button class="link-card copy-button" id="copy-wechat" type="button" data-wechat="wamgjt1127" style="--i: 5">
+          <i class="link-icon fa-brands fa-weixin" aria-hidden="true"></i>
+          <span class="link-text">WeChat</span>
+          <span class="link-arrow" aria-hidden="true">⎘</span>
+        </button>
+      </nav>
+
+      <div class="toast" id="toast" role="status" aria-live="polite">已复制</div>
+
+      <footer class="footer">
+        <div class="footer-line" aria-hidden="true"></div>
+        <p>
+          <span>访问次数</span>
+          <strong id="visit-count">0</strong>
+        </p>
+          <p>Made with AI</p>
+      </footer>
+    </main>
+  </body>
+</html>
